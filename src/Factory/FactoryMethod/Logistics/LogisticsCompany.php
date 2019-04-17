@@ -12,5 +12,5 @@ abstract class LogisticsCompany
         ;
     }
 
-    abstract protected function getTransport(): Transport;
+    abstract public function getTransport(): Transport;
 }

@@ -2,10 +2,10 @@
 
 namespace App\Factory\FactoryMethod\Logistics;
 
-class Train extends Transport
+class Truck extends Transport
 {
     public function getTransportName(): string
     {
-        return 'train';
+        return 'truck';
     }
 }

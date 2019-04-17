@@ -2,10 +2,10 @@
 
 namespace App\Factory\FactoryMethod\Logistics;
 
-class TrainLogisticsCompany extends LogisticsCompany
+class TruckLogisticsCompany extends LogisticsCompany
 {
     public function getTransport(): Transport
     {
-        return new Train();
+        return new Truck();
     }
 }

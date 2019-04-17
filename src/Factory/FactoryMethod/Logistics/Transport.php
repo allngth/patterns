@@ -9,8 +9,5 @@ abstract class Transport
         print_r("Deliver from \"$from\" to \"$to\" by {$this->getTransportName()}.\n");
     }
 
-    /**
-     * @return string
-     */
     abstract public function getTransportName(): string;
 }

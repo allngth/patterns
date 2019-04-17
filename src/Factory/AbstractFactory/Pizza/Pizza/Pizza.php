@@ -40,6 +40,11 @@ abstract class Pizza
         return $this->name;
     }
 
+    public function getCheese()
+    {
+        return $this->cheese;
+    }
+
     public function __toString()
     {
         /** echo Pizza's description */

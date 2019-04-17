@@ -2,7 +2,7 @@
 
 namespace App\Factory\AbstractFactory\Pizza\Store;
 
-use App\Factory\AbstractFactory\Pizza\Factory\NYPizzaIngredientFactory;
+use App\Factory\AbstractFactory\Pizza\Factory\ChicagoPizzaIngredientFactory;
 use App\Factory\AbstractFactory\Pizza\Pizza\{CheesePizza, ClamPizza, Pizza};
 
 class ChicagoPizzaStore extends PizzaStore
@@ -11,7 +11,7 @@ class ChicagoPizzaStore extends PizzaStore
     {
         $pizza = null;
 
-        $ingredientFactory = new NYPizzaIngredientFactory();
+        $ingredientFactory = new ChicagoPizzaIngredientFactory();
 
         if ($type === 'cheese') {
             $pizza = new CheesePizza($ingredientFactory);

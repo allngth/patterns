@@ -15,5 +15,7 @@ class LogisticsCompany
     {
         $transport = $this->transportFactory->getTransport($transportName);
         $transport->deliver($from, $to);
+
+        return $transport;
     }
 }

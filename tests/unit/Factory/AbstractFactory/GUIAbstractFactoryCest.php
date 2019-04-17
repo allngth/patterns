@@ -8,8 +8,13 @@ use App\Factory\AbstractFactory\GUI\Element\WinCheckbox;
 use App\Factory\AbstractFactory\GUI\Factory\MacFactory;
 use App\Factory\AbstractFactory\GUI\Factory\WinFactory;
 
-class GUICest
+class GUIAbstractFactoryCest
 {
+    public function _before()
+    {
+        print_r(PHP_EOL);
+    }
+
     public function testWinElements(UnitTester $I)
     {
         $factory = new WinFactory();

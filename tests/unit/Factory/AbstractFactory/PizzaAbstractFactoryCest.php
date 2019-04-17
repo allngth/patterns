@@ -5,7 +5,7 @@ use App\Factory\AbstractFactory\Pizza\Ingredient\ReggianoCheese;
 use App\Factory\AbstractFactory\Pizza\Store\ChicagoPizzaStore;
 use App\Factory\AbstractFactory\Pizza\Store\NYPizzaStore;
 
-class PizzaCest
+class PizzaAbstractFactoryCest
 {
     public function _before()
     {

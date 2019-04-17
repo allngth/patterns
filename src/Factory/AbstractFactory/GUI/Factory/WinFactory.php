@@ -11,15 +11,11 @@ class WinFactory extends GUIFactory
 {
     public function createButton(): Button
     {
-        print_r("Create win button\n");
-
         return new WinButton();
     }
 
     public function createCheckbox(): Checkbox
     {
-        print_r("Create win checkbox\n");
-
         return new WinCheckbox();
     }
 }

@@ -2,6 +2,8 @@
 
 namespace App\Factory\AbstractFactory\GUI;
 
+use App\Factory\AbstractFactory\GUI\Element\Button;
+use App\Factory\AbstractFactory\GUI\Element\Checkbox;
 use App\Factory\AbstractFactory\GUI\Factory\GUIFactory;
 
 class Application
@@ -23,5 +25,15 @@ class Application
     {
         $this->button = $this->GUIFactory->createButton();
         $this->checkbox = $this->GUIFactory->createCheckbox();
+    }
+
+    public function getButton(): Button
+    {
+        return $this->button;
+    }
+
+    public function getCheckBox(): Checkbox
+    {
+        return $this->checkbox;
     }
 }

@@ -6,8 +6,12 @@ class Singleton
 {
     protected static $uniqueInstance;
 
+    protected $id;
+
     private function __construct()
     {
+        $this->id = rand(1, 1000);
+
         print "Initialize new instance\r\n";
     }
 
@@ -18,5 +22,10 @@ class Singleton
         }
 
         return self::$uniqueInstance;
+    }
+
+    public function getId()
+    {
+        return $this->id;
     }
 }

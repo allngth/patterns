@@ -1,2 +1,4 @@
 /.idea/
 /vendor/
+/codeception.yml
+/tests/unit.suite.yml

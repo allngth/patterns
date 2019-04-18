@@ -7,6 +7,8 @@ class Dot implements GraphicInterface
     public $x;
     public $y;
 
+    public $dotCount = 0;
+
     public function __construct($x, $y)
     {
         $this->x = $x;
@@ -21,6 +23,6 @@ class Dot implements GraphicInterface
 
     public function draw()
     {
-        // TODO: Draw dot
+        $this->dotCount += 1;
     }
 }

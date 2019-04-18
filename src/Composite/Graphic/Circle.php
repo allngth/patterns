@@ -6,6 +6,8 @@ class Circle extends Dot
 {
     public $radius;
 
+    public $circleCount = 0;
+
     public function __construct($x, $y, $radius)
     {
         $this->radius += $radius;
@@ -15,6 +17,6 @@ class Circle extends Dot
 
     public function draw()
     {
-        // TODO: Draw Circle
+        $this->circleCount += 1;
     }
 }
